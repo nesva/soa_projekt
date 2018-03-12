@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://weatherpi/soap_wsdl/" xmlns:tns="http://wsdl.example.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="getHumidity" type="tns:getHumidity"/>
+
+  <xs:element name="getHumidityResponse" type="tns:getHumidityResponse"/>
+
+  <xs:element name="getTemperature" type="tns:getTemperature"/>
+
+  <xs:element name="getTemperatureResponse" type="tns:getTemperatureResponse"/>
+
+  <xs:element name="getWindDirection" type="tns:getWindDirection"/>
+
+  <xs:element name="getWindDirectionResponse" type="tns:getWindDirectionResponse"/>
+
+  <xs:element name="getWindSpeed" type="tns:getWindSpeed"/>
+
+  <xs:element name="getWindSpeedResponse" type="tns:getWindSpeedResponse"/>
+
+  <xs:complexType name="getTemperature">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getTemperatureResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getHumidity">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getHumidityResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getWindSpeed">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getWindSpeedResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getWindDirection">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getWindDirectionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
